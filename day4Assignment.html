@@ -1,0 +1,34 @@
+<!--  1. Create a div that covers half the screen and when clicked becomes full screen and changes color. -->
+
+<html>
+    <head>
+        <title> Document </title>
+        <style>
+            .box{
+                height:50%;
+                width:100%;
+                background-color: rgb(76, 187, 8);
+            }
+            
+        </style>
+    </head>
+    <body>
+
+        
+        <div id="one" class="box" onclick="change_color(this)">
+
+        </div>
+
+        <!-- <script src="Day4_first.js"></script> -->
+        <script>
+            function change_color(elem){
+                // elem.style.background-color : black;
+                elem.style.width="100%";
+                elem.style.height="100%";
+                elem.style.backgroundColor ="cyan";
+            }
+            
+            var elem= document.getElementById("one");
+        </script>
+    </body>
+</html>
